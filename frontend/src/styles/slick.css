@@ -1,0 +1,15 @@
+.slick-arrow{
+    display: none !important;
+}
+.slick-dots li.slick-active button:before{
+    color: #2b38d1;
+}
+.slick-dots li button:before{
+    font-size: 8px;
+}
+.slick-dots li{
+    margin: 0 3px;
+}
+.slick-dots{
+    bottom: 15px;
+}

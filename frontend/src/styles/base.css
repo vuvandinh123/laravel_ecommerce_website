@@ -1,0 +1,57 @@
+body{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.cate:last-child >div{
+    margin-right: 0;
+}
+.ship:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    /* right: 0; */
+    width: inherit;
+    background-color: red;
+    background-image: linear-gradient(135deg,rgba(255,255,255,.5) 0,rgba(255,255,255,.5) 25%,rgba(255,255,255,0) 25%,rgba(255,255,255,0) 50%,rgba(255,255,255,.5) 50%,rgba(255,255,255,.5) 75%,rgba(255,255,255,0) 75%,rgba(255,255,255,0) 100%);
+    z-index: 1;
+    -webkit-animation: move 2.5s linear infinite;
+    animation:  move 4s linear infinite;
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: 1rem 1rem;
+}
+.ship::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #0000005c;
+    z-index: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: 1rem 1rem;
+}
+@keyframes move {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 0;
+    }
+}
+::-webkit-scrollbar {
+    width: 3px;
+    background-color: #F5F5F5;
+} 
+::-webkit-scrollbar-thumb {
+    background-color: #0037ff;
+}
+.shadow-cart{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.shadow-nav{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}

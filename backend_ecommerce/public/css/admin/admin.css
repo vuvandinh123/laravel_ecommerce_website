@@ -1,0 +1,218 @@
+.navbar-vertical.navbar-expand-xs .navbar-collapse {
+    height: auto !important;
+}
+.sidenav{
+    width: 80px !important;
+    overflow: hidden !important;
+    transition: 1s !important;
+}
+.sidenav:hover{
+    width: 230px !important;
+
+}
+.sidenav.active{
+    width: 230px !important;
+}
+.sidenav.active .logo_nav{
+    opacity: 1;
+}
+.sidenav:hover .nav-link-text{
+    opacity: 1;
+}
+.sidenav .nav-link-text,.logo_nav{
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+.sidenav .nav-item h6{
+    opacity: 0 !important;
+    white-space: nowrap;
+    transition: 1s;
+
+}
+.sidenav:hover .nav-item h6{
+    opacity: 1 !important;
+}
+.sidenav.active .nav-item h6{
+    opacity: 1 !important;
+}
+.sidenav.fixed-start+.main-content{
+    margin-left: 8rem;
+    transition: 1s;
+}
+.sidenav:hover .logo_nav{
+    opacity: 1;
+}
+.sidenav:hover.fixed-start+.main-content{
+    margin-left: 17rem;
+}
+
+
+.sidenav.active +.main-content{
+    margin-left: 17rem;
+}
+.bars{
+    position: fixed;
+    z-index: 999;
+    font-size: 1.5rem;
+    color: #09ed14;            
+    left: 17rem;
+    top: 1rem;
+    transition: 1s;
+    cursor: pointer;
+}
+.table td, .table th {
+    white-space: unset !important;
+}
+/* toas */
+.toasts{
+    position: fixed;
+    z-index: 999;
+    top: -50px;
+    left: 50%;
+    background: rgb(30, 255, 0);
+    color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: animationtoas 7s linear;
+    
+}
+
+@keyframes animationtoas{
+    0%{
+        top: -50px;
+    }
+    25%{
+        top: 10px;
+    }
+    50%{
+        top: 10px;
+    }
+    75%{
+        top: 10px;
+    }
+    100%{
+        top: -50px;
+        animation-delay: 15s;
+    }
+    
+}
+.toasts div::after{
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 7px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 45px;
+    background: red;
+    animation: animationToasts 3s linear;
+    animation-delay:2s; 
+}
+@keyframes animationToasts{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.toasts > div{
+    line-height: 3;
+    height: 100%;
+    width: 100%;
+    border-bottom: 5px solid rgb(195, 195, 195);
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    padding: 0;
+}
+.avatar{
+    width: 50px !important;
+}
+label{
+    cursor: pointer;
+}
+.image-create{
+    position: relative;
+}
+.image-create input{
+    display: none;
+}
+
+.image-create input[type=radio]:checked + input{
+    display: block;
+}
+svg {
+    transform: scale(1.5);
+}
+.loading{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* display: none; */
+}
+.loader {
+width: 48px;
+height: 48px;
+border-radius: 50%;
+display: inline-block;
+position: relative;
+border: 3px solid;
+border-color: #FFF #FFF transparent transparent;
+box-sizing: border-box;
+animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+content: '';  
+box-sizing: border-box;
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+margin: auto;
+border: 3px solid;
+border-color: transparent transparent #FF3D00 #FF3D00;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+box-sizing: border-box;
+animation: rotationBack 0.5s linear infinite;
+transform-origin: center center;
+}
+.loader::before {
+width: 32px;
+height: 32px;
+border-color: #FFF #FFF transparent transparent;
+animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(360deg);
+}
+} 
+@keyframes rotationBack {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(-360deg);
+}
+}

@@ -1,0 +1,30 @@
+.dataTables_length{
+    margin-left: 20px;
+  }
+  .dataTables_length label select{
+    width: 70px !important;
+    margin: 0 10px !important;
+  }
+  .dataTables_filter{
+    margin-right: 100px;
+  }
+  .dataTables_filter input{
+    width: 100% !important;
+    /* border: none; */
+    border-radius: 0px;
+  }
+  .dataTables_info{
+    margin-left: 20px;
+    font-size: 13px;
+  }
+  .dataTables_paginate{
+    margin-right: 40px !important;
+  }
+  .dataTables_paginate ul{
+    gap: 10px;
+  }
+  .page-item .page-link{
+    border-radius: 0px !important;
+    color: #b0b0b0 !important;
+    font-size: 11px !important;
+  }

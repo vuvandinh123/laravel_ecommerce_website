@@ -1,0 +1,5 @@
+.sidebar:hover > .sidebar-item {
+    transform: translateX(0);
+    opacity: 100;
+    visibility: visible; 
+}

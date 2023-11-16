@@ -1,0 +1,14 @@
+export {default as HomePage} from './home';
+export {default as LoginPage} from './login';
+export {default as NoPage} from './noPage404';
+export {default as SingupPage} from './singup';
+export {default as Products} from './products';
+export {default as ProductDetail} from './productDetail';
+export {default as CategoryPage} from './category';
+export {default as SearchPage} from './search';
+export {default as CartPage} from './cart';
+export {default as CheckoutPage} from './checkout';
+export {default as PostPage} from './post';
+export {default as PostDetailPage} from './postDetail';
+export {default as OrderDetailPage} from './orderDetail';
+export {default as PageDetail} from './page';

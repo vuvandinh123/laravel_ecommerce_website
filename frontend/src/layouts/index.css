@@ -1,0 +1,22 @@
+.menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  
+  .menu-item:hover .submenu {
+    display: block;
+  }
+  
